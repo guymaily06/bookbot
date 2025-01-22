@@ -1,3 +1,4 @@
 with open("books/frankenstein.txt") as f:
-    words = str.split(f)
-print (words)
+    file_contents = f.read()
+    words = file_contents.split()
+print (len(words))

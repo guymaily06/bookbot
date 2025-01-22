@@ -1,3 +1,3 @@
 with open("books/frankenstein.txt") as f:
-    words = f.split()
+    words = str.split(f)
 print (words)

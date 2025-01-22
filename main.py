@@ -1,3 +1,3 @@
-with open("./github.com/USERNAME/bookbot/books/frankenstein.txt") as f:
-    file_contents = f.read()
-print (file_contents)
+with open("books/frankenstein.txt") as f:
+    words = f.split()
+print (words)

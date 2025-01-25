@@ -13,7 +13,7 @@ def main():
     for item in chars_sorted_list:
         if not item ["char"].isalpha():
             continue
-        print(f"The ' {item['char']}' character was found {item['num']} times")
+        print(f"The' {item['char']}' character was found {item['num']} times")
 
     print ("--- End report --- ")
 
@@ -45,5 +45,5 @@ def get_chars_dict(text):
 def get_book_text(path):
     with open(path) as f:
         return f.read()
-
+#note
 main()

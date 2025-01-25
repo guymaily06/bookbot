@@ -25,7 +25,7 @@ def get_num_words(text):
 def sort_on(d):
     return d["num"]
 
-def chars_dict_to_sorte_list(num_chars_dict):
+def chars_dict_to_sorted_list(num_chars_dict):
     sorted_list = []
     for ch in num_chars_dict:
         sorted_list.append ({"char": ch, "num": num_chars_dict[ch]})

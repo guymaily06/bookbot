@@ -1,1 +1,1 @@
-print ("greetinngs boots")
+print ("greetings boots")

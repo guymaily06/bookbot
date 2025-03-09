@@ -1,19 +1,19 @@
 import sys
 
+book_path = sys.argv [1:]
+
 from stats import (
     get_num_words, 
     chars_dict_to_sorted_list,
     get_chars_dict
 )
 
-#counter = 0
-
-#for book in sys.argv:
-#    book_path = book
+#if len (sys.argv) < 2:
+#    print (f"Usage: python3 main.py ()")
 
 
 def main():
-    book_path = sys.argv []
+    
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict (text)

@@ -1,11 +1,19 @@
+import sys
+
 from stats import (
     get_num_words, 
     chars_dict_to_sorted_list,
     get_chars_dict
 )
 
+#counter = 0
+
+#for book in sys.argv:
+#    book_path = book
+
+
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = sys.argv
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict (text)

@@ -1,6 +1,10 @@
 import sys
 
-book_path = sys.argv [1:]
+if len(sys.argv) !=2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
+path_to_book = sys.argv[1]
 
 from stats import (
     get_num_words, 
@@ -14,11 +18,11 @@ from stats import (
 
 def main():
     
-    text = get_book_text(book_path)
+    text = get_book_text(path_to_book)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict (text)
     chars_sorted_list = chars_dict_to_sorted_list(chars_dict)
-    print_report (book_path, num_words, chars_sorted_list)
+    print_report (path_to_book, num_words, chars_sorted_list)
 
 def get_book_text(path):
     with open(path) as f:

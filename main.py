@@ -12,10 +12,6 @@ from stats import (
     get_chars_dict
 )
 
-#if len (sys.argv) < 2:
-#    print (f"Usage: python3 main.py ()")
-
-
 def main():
     
     text = get_book_text(path_to_book)
